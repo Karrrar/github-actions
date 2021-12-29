@@ -10,4 +10,7 @@ jobs:
           node-version: "14"
       - run: npm install -g bats
       - run: bats -v
+  check-npm-verion:
+    runs-on: macos-latest
+    steps:
       - run: npm -v
